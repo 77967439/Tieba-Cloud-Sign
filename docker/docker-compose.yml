@@ -7,7 +7,7 @@ services:
       - PGID=1000  # 可修改为你想以什么用户运行caddy，该用户的UID
       - DB_HOST=db:3306
       - DB_USER=root
-      - DB_PASSWD=janejane123456  # 数据库密码
+      - DB_PASSWD=zmh666888  # 数据库密码
       - DB_NAME=tiebacloud        # 数据库名
       - CSRF=true
       # - TC_AUTO_CREATE_INSTALL_LOCK=true # 如果希望自动创建install.lock请解除此注释
@@ -24,6 +24,6 @@ services:
     image: agrozyme/mariadb  #如若此镜像在你的平台上不可用，可以自行在docker hub上搜索你平台可用的mariadb镜像
     environment:
       - MYSQL_DATABASE=tiebacloud
-      - MYSQL_ROOT_PASSWORD=janejane123456
+      - MYSQL_ROOT_PASSWORD=zmh666888
     volumes:
       - ./mysql:/var/lib/mysql
